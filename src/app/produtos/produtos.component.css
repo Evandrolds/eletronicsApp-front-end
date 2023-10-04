@@ -1,0 +1,54 @@
+.lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.lista-produtos-cards {
+  width: 15rem;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.link-lista-produtos {
+  text-decoration: none;
+}
+.img-produtos {
+  display: flex;
+  width: 7rem;
+  min-width: auto;
+}
+.imagem-produtos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nome-produtos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: rgb(62, 106, 119);
+}
+.preco-descricao-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.preco-produto {
+  font-weight: 700;
+  color: rgb(243, 108, 18);
+}
+.produto-descricao {
+  padding: 10px;
+}
+
+/* Hovers */
+.lista-produtos-cards:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  /* max-width: 20rem;
+  border: solid 1px rgb(151, 149, 149); */
+}

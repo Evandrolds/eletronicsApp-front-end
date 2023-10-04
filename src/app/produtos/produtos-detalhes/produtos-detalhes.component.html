@@ -1,0 +1,41 @@
+<section class="container" *ngIf="produtos">
+  <div class="container-image">
+    <!-- Passando o databyde no src -->
+    <img [src]="produtos.imagem" alt="Imagem do produto {{ produtos.nome }}" />
+  </div>
+  <div class="container-content">
+    <div class="card-title m-2" alt="nome da imagem">
+      {{ produtos.nome }}
+    </div>
+    <div class="card-body .text-success">
+      <h3 class="produto-descricao" alt="descricao do produto">
+        {{ produtos.descricao }}
+      </h3>
+
+      <h4 class="detalhes-produto">
+        {{ produtos.formaDePagamento }}
+      </h4>
+      <h2 class="preco-produto">{{ produtos.preco | currency : "BRL" }}</h2>
+
+      <label>
+        Quantidade:
+        <input
+          type="number"
+          class="inputQuantidade"
+          [(ngModel)]="quantidade"
+          min="1"
+        />
+        Unidade(s)
+      </label>
+      <p>Estoque disponível:</p>
+      <p class="produtos-quantidades">
+        {{ produtos.quantidadeEstoque }} Unidade(s) em estoque
+      </p>
+    </div>
+    <div class="carrinho">
+      <button class="btn btn-primary m-4" (click)="adicionarAocarriho()">
+        Adicionar ao carrinho
+      </button>
+    </div>
+  </div>
+</section>

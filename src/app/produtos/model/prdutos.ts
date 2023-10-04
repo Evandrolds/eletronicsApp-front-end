@@ -1,0 +1,188 @@
+export interface ProdutosModel {
+  id: number;
+  nome: string;
+  descricao: string;
+  preco: number;
+  formaDePagamento: string;
+  quantidadeEstoque: number;
+  imagem: string;
+}
+export interface ProdutoCarrinho extends ProdutosModel {
+  quantidade: number;
+}
+export const produtos = [
+  {
+    id: 1,
+    nome: 'Mouse',
+    descricao:
+      'Mouse para jogos sem fio Glorious Model D- (Minus) - RGB 67g Mouse ergonômico leve para jogos sem fio (Preto Fosco)',
+    preco: 127.9,
+    formaDePagamento: 'A vista',
+    quantidadeEstoque: 20,
+    imagem: './assets/img-mouse.jpg',
+  },
+  {
+    id: 2,
+    nome: 'Teclado',
+    descricao:
+      'Teclado Mecanico Gamer Mancer Ghoul MK2, RGB, ABNT2, Switch Huano Marrom, Preto, MCR-GHM2-RGB01BW',
+    preco: 127.9,
+    formaDePagamento: 'A vista no Pix',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-teclado-2.jpg',
+  },
+  {
+    id: 3,
+    nome: 'Monitor',
+    descricao: 'Monitor LED 39 polegada',
+    preco: 3675.8,
+    formaDePagamento: 'Parcela em até 6X ',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-monitor.jpg',
+  },
+  {
+    id: 4,
+    nome: 'Cabo HDMI',
+    descricao: 'Cabo HDM 5 Metros',
+    preco: 15.7,
+    formaDePagamento: 'A vista no Pix',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-cabo-HDMI.jpg',
+  },
+  {
+    id: 5,
+    nome: 'Fone de ouvido',
+    descricao:
+      'Headset Gamer Sem Fio Logitech G733 7.1 Dolby Surround com Tecnologia Blue VO!CE, RGB LIGHTSYNC, Drivers de Áudio ',
+    preco: 425.1,
+    formaDePagamento: 'A vista no Pix',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-headset.jpg',
+  },
+  {
+    id: 6,
+    nome: 'Computador',
+    descricao: 'PC Gamer com CPU i7 octa-core 32 Gb SSD-240 Gb',
+    preco: 3754.9,
+    formaDePagamento: 'Parcela em até 12 no cartão',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-CPU.jpg',
+  },
+  {
+    id: 7,
+    nome: 'Placa-mãe',
+    descricao: 'Placa-mãe Gigabyte',
+    preco: 475.9,
+    formaDePagamento: 'A vista',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-placa-mae.jpg',
+  },
+  {
+    id: 8,
+    nome: 'Placa de video',
+    descricao: 'Placa de video Gigabyte',
+    preco: 984.9,
+    formaDePagamento: 'A vista no Pix com 10% de desconto',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-placa-de-video-2.jpg',
+  },
+  {
+    id: 9,
+    nome: 'Memoria Ram',
+    descricao: 'Pente de Memoria Ram DDR4 16gb',
+    preco: 215.9,
+    formaDePagamento: 'A vista no Pix com 5% desconto',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-memoria-ram.jpg',
+  },
+  {
+    id: 10,
+    nome: ' Fonte watz Real',
+    descricao: 'Font Corser VS500',
+    preco: 547.9,
+    formaDePagamento: 'A vista',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-font.jpg',
+  },
+  {
+    id: 11,
+    nome: ' Notebook',
+    descricao: 'notebook samsung i7 8gb 1tb placa de vídeo 2gb',
+    preco: 5547.9,
+    formaDePagamento: 'A vista ou em até 12X',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-notebook.jpg',
+  },
+  {
+    id: 12,
+    nome: 'Processador Intel',
+    descricao: 'Processador Intel i7 terceira geração 12 m-cach',
+    preco: 534.3,
+    formaDePagamento: 'A vista ou em até 12X',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-processador.jpg',
+  },
+  {
+    id: 13,
+    nome: ' Placa de video',
+    descricao: 'Placa de video Azuz DDR5',
+    preco: 1750.3,
+    formaDePagamento: 'A vista ou em até 12X',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-placa-de-video.jpg',
+  },
+  // {
+  //   id: 14,
+  //   nome: ' Cabo Sata',
+  //   descricao: 'Cabo Sata vermelho',
+  //   preco: 12.5,
+  //   formaDePagamento: 'A vista no Pix',
+  //   quantidadeEstoque: 10,
+  //   imagem: './assets/img-cabo-sata.jpg',
+  // },
+  {
+    id: 15,
+    nome: 'SSD',
+    descricao: 'SSD 250 Gb',
+    preco: 195.8,
+    formaDePagamento: 'A vista no Pix',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-ssd.jpg',
+  },
+  {
+    id: 16,
+    nome: 'HD SW',
+    descricao: 'HD Externo 1T',
+    preco: 265.3,
+    formaDePagamento: 'A vista ou em até 3X',
+    quantidadeEstoque: 10,
+    imagem: './assets/img-hd-externo.jpg',
+  },
+  {
+    id: 17,
+    nome: 'Monitor 4K ',
+    descricao: 'Monitor 29 polegadas Samsung 4k UHD',
+    preco: 3650.3,
+    formaDePagamento: 'A vista ou em até 3X',
+    quantidadeEstoque: 6,
+    imagem: './assets/img-monitor-2.jpg',
+  },
+  // {
+  //   id: 18,
+  //   nome: 'Placa de Video  ',
+  //   descricao: 'Gigabyte Geforce GT 1030 DRR 5  8gb de memoria Grafic 128bts',
+  //   preco: 1850.0,
+  //   formaDePagamento: 'A vista ou em até 12X',
+  //   quantidadeEstoque: 6,
+  //   imagem: './assets/img-placadevideo-2.jpg',
+  // },
+  // {
+  //   id: 19,
+  //   nome: 'Precessador Ryzen ',
+  //   descricao: 'Precessador Ryzen 12 mega de cache 3.8 GHZ octacore (8 nucleos',
+  //   preco: 650.5,
+  //   formaDePagamento: 'A vista ou em até 3X',
+  //   quantidadeEstoque: 6,
+  //   imagem: './assets/img-processador-2.jpg',
+  // },
+];

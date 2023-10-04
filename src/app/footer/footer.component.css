@@ -1,0 +1,59 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  margin: 15px;
+  padding: 15px;
+  background-color: #aec8da;
+}
+.contatos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: solid 1px rgb(120, 155, 179);
+}
+.fa-whatsapp,
+.fa-envelope {
+  margin: 7px;
+}
+li {
+  list-style: none;
+}
+.footer-contato {
+  display: flex;
+  margin-left: 15px;
+  padding-left: 7px;
+  color: #267aa3;
+}
+
+.fa-whatsapp {
+  font-size: 20px;
+  color: rgb(10, 109, 59);
+}
+.fa-envelope {
+  font-size: 20px;
+  color: #267aa3;
+}
+.footer-title {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 25rem;
+}
+
+.footer-text {
+  color: rgb(31, 109, 122);
+}
+.footer-about-text {
+  color: rgb(72, 94, 94);
+}
+.footer-about-text,
+.footer-text {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 20px;
+}
+.footer-copyright {
+  text-align: center;
+  color: #267aa3;
+}

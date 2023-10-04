@@ -1,0 +1,65 @@
+.title-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background-color: rgb(72, 86, 90);
+  padding-left: 10px;
+}
+.navbar-expand-lg {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.title-header,
+.nome-title,
+h1 {
+  padding-top: 7px;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  color: chocolate;
+}
+
+.title-reader,
+h1 {
+  color: cadetblue;
+}
+.form-control {
+  width: 400px;
+}
+.fa-solid,
+.fa-cart-shopping a {
+  font-size: 25px;
+  margin-left: 7px;
+  text-decoration: none;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.fa-square-facebook,
+.fa-linkedin,
+.fa-instagram,
+.fa-github {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 25px;
+  margin-left: 10px;
+}
+/* Hover */
+.fa-square-facebook:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover,
+.fa-github:hover {
+  font-size: 28px;
+}
+.fa-heart {
+  font-size: 20px;
+  color: brown;
+}
+.fa-heart:hover {
+  font-size: 21px;
+  color: red;
+}

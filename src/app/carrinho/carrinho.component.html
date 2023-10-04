@@ -1,0 +1,35 @@
+<div *ngIf="intensDoCarrinho.length > 0; else naoHaProdutos" class="container">
+  <h2 class="cart-title">Carrinho</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let itemDoCarrinho of intensDoCarrinho">
+      <img [src]="itemDoCarrinho.imagem" alt="" />
+      <p>{{ itemDoCarrinho.nome }}</p>
+      <p>Preço: {{ itemDoCarrinho.preco | currency : "BRL" }}</p>
+      <label for=""
+        >Quantidade:
+        <!-- Aqui é preciso importar o FormsModule no carrinho.module.ts para utilizar a diretiva do ngModel-->
+        <!-- Tambem foi adicionado o Change para pegar os valores no input de quantidade e atualizar -->
+        <input
+          class="input-quantidade"
+          type="number"
+          [(ngModel)]="itemDoCarrinho.quantidade"
+          (change)="totalProdutosCarrinho()"
+        />
+      </label>
+      <button
+        class="btn btn-danger"
+        (click)="removeProdutoCarrinho(itemDoCarrinho.id)"
+      >
+        Remover
+      </button>
+    </li>
+    <h2 class="cart-total">
+      Total de produtos: {{ precoTotal | currency : "BRL" }}
+    </h2>
+    <button class="btn btn-primary" (click)="comprar()">Comprar</button>
+  </ul>
+</div>
+<!-- Criando um Template para passar no else da condição naoHaProdutos -->
+<ng-template #naoHaProdutos>
+  <h2 class="info">Você não possue produtos no carrinho!</h2>
+</ng-template>

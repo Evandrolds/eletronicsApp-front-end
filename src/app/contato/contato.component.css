@@ -1,0 +1,49 @@
+.title-contato {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 15px;
+}
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  row-gap: 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.campo-texto {
+  height: 160px;
+}
+.btn {
+  margin-top: 10px;
+}
+input {
+  padding: 10px;
+}
+small {
+  color: rgb(228, 90, 56);
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.map-Iframe {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: auto;
+}
+p {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
